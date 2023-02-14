@@ -16,7 +16,7 @@ namespace Sistema_FAT
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Pantalla_Principal());
+            Application.Run(new Directorio_Archivos());
         }
     }
 }
