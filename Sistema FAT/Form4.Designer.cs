@@ -39,6 +39,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.TipoArchivo = new System.Windows.Forms.Label();
             this.iconList = new System.Windows.Forms.ImageList(this.components);
+            this.button3 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -124,11 +125,22 @@
             this.iconList.Images.SetKeyName(0, "carpetaicono.png");
             this.iconList.Images.SetKeyName(1, "txticono.png");
             // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(386, 7);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(160, 23);
+            this.button3.TabIndex = 8;
+            this.button3.Text = "Ejecucion en Tiempo Real";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
             // Directorio_Archivos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(595, 450);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.TipoArchivo);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.NombreArchivo);
@@ -156,5 +168,6 @@
         private System.Windows.Forms.Label NombreArchivo;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label TipoArchivo;
+        private System.Windows.Forms.Button button3;
     }
 }

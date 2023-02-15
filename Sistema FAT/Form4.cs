@@ -151,5 +151,12 @@ namespace Sistema_FAT
             goAtras();
             cargarArchivos();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Form TiempoR= new Tiempo_Real();
+            TiempoR.Show();
+            this.Hide();
+        }
     }
 }
