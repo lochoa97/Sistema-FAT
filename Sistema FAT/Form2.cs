@@ -19,27 +19,28 @@ namespace Sistema_FAT
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            StreamReader mostrar = new StreamReader(@"C:\Users\Manuel Padilla\Desktop\proyecto fat\configuracion OS\OS.txt");
-            MessageBox.Show(mostrar.ReadToEnd());
-            mostrar.Close();
-        }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            StreamWriter registrar = new StreamWriter(@"C:\Users\Manuel Padilla\Desktop\proyecto fat\configuracion OS\OS.txt", true);
+            StreamWriter registrar = new StreamWriter(@"C:\Users\lochoa\Desktop\LuisOchoa\ceutec\SistemaFAT\Sistema FAT\BD\OS.txt", true);
             try
             {
                 registrar.WriteLine("Memoria Ram: " + txt_Memoria.Text);
                 registrar.WriteLine("Virtualizacion: " + comboBox2.Text);
                 registrar.WriteLine("\n");
+                registrar.WriteLine("\n");
+
+                MessageBox.Show("Información de tarjeta RAM guardada con exito!");
+
+                this.Close();
             }
             catch
             {
                 MessageBox.Show("ERROR");
             }
             registrar.Close();
+
+            this.Close();
         }
 
         private void button2_Click_1(object sender, EventArgs e)

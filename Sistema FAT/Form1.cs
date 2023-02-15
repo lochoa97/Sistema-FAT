@@ -30,39 +30,35 @@ namespace Sistema_FAT
 
         private void button1_Click(object sender, EventArgs e)
         {
-            StreamWriter registrar = new StreamWriter(@"C:\Users\Manuel Padilla\Desktop\proyecto fat\configuracion OS\OS.txt",true);
+            StreamWriter registrar = new StreamWriter(@"C:\Users\lochoa\Desktop\LuisOchoa\ceutec\SistemaFAT\Sistema FAT\BD\OS.txt", true);
             try{
                 registrar.WriteLine("Nombre: "+textBox1.Text);
                 registrar.WriteLine("Tipo: " + textBox2.Text);
                 registrar.WriteLine("Version: " + comboBox1.Text);
                 registrar.WriteLine("\n");
+
+                MessageBox.Show("Información del sistema operativo guardada con exito!");
+
+
                 //Abrir el siguiete formulario
                 Form formulario2 = new Form2();
                 formulario2.Show();
-                Close();
+                this.Close();
             }
             catch
             { MessageBox.Show("ERROR");
             }
                 registrar.Close();
         }
-       
-        private void button1_Click_1(object sender, EventArgs e)
-        {
-            
-            Form ventana2 = new Form2();
-            ventana2.Show();
-            this.Hide();
-        }
-
-        private void btn_Menu_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
 
         private void Form1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnMenu_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

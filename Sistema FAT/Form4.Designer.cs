@@ -34,12 +34,13 @@
             this.button2 = new System.Windows.Forms.Button();
             this.FilePath = new System.Windows.Forms.TextBox();
             this.listView1 = new System.Windows.Forms.ListView();
+            this.iconList = new System.Windows.Forms.ImageList(this.components);
             this.label1 = new System.Windows.Forms.Label();
             this.NombreArchivo = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.TipoArchivo = new System.Windows.Forms.Label();
-            this.iconList = new System.Windows.Forms.ImageList(this.components);
             this.button3 = new System.Windows.Forms.Button();
+            this.btnRegresarMain = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -82,6 +83,13 @@
             this.listView1.ItemSelectionChanged += new System.Windows.Forms.ListViewItemSelectionChangedEventHandler(this.listView1_ItemSelectionChanged);
             this.listView1.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.listView1_MouseDoubleClick);
             // 
+            // iconList
+            // 
+            this.iconList.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("iconList.ImageStream")));
+            this.iconList.TransparentColor = System.Drawing.Color.Transparent;
+            this.iconList.Images.SetKeyName(0, "carpetaicono.png");
+            this.iconList.Images.SetKeyName(1, "txticono.png");
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -118,16 +126,9 @@
             this.TipoArchivo.TabIndex = 7;
             this.TipoArchivo.Text = "--";
             // 
-            // iconList
-            // 
-            this.iconList.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("iconList.ImageStream")));
-            this.iconList.TransparentColor = System.Drawing.Color.Transparent;
-            this.iconList.Images.SetKeyName(0, "carpetaicono.png");
-            this.iconList.Images.SetKeyName(1, "txticono.png");
-            // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(386, 7);
+            this.button3.Location = new System.Drawing.Point(305, 7);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(160, 23);
             this.button3.TabIndex = 8;
@@ -135,11 +136,22 @@
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
+            // btnRegresarMain
+            // 
+            this.btnRegresarMain.Location = new System.Drawing.Point(471, 7);
+            this.btnRegresarMain.Name = "btnRegresarMain";
+            this.btnRegresarMain.Size = new System.Drawing.Size(75, 23);
+            this.btnRegresarMain.TabIndex = 9;
+            this.btnRegresarMain.Text = "Salir";
+            this.btnRegresarMain.UseVisualStyleBackColor = true;
+            this.btnRegresarMain.Click += new System.EventHandler(this.btnRegresarMain_Click);
+            // 
             // Directorio_Archivos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(595, 450);
+            this.Controls.Add(this.btnRegresarMain);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.TipoArchivo);
             this.Controls.Add(this.label3);
@@ -169,5 +181,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label TipoArchivo;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnRegresarMain;
     }
 }

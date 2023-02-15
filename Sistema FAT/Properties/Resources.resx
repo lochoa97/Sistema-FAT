@@ -118,22 +118,28 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="configuraciones" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\configuraciones.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="cerrar2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cerrar2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="confiOS" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\confiOS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="configuraciones2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\configuraciones2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="RAM" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RAM.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="disco-duro2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\disco-duro2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="configuraciones" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\configuraciones.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Formateo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Formateo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="carpeta2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\carpeta2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="configuraciones2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\configuraciones2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

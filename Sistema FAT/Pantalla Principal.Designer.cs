@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.Panel_Lateral = new System.Windows.Forms.Panel();
+            this.btn_OS = new System.Windows.Forms.Button();
             this.Margen = new System.Windows.Forms.Panel();
             this.Panel_Contenido = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
@@ -41,13 +42,25 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.lblData = new System.Windows.Forms.Label();
+            this.lblso = new System.Windows.Forms.Label();
+            this.lblram = new System.Windows.Forms.Label();
+            this.lbldisk = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.btnFormatear = new System.Windows.Forms.Button();
+            this.imgdisk = new System.Windows.Forms.PictureBox();
+            this.imgram = new System.Windows.Forms.PictureBox();
+            this.btnSalir = new System.Windows.Forms.Button();
             this.btn_Salir = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.btn_OArchivos = new System.Windows.Forms.Button();
             this.btn_Disco = new System.Windows.Forms.Button();
-            this.btn_OS = new System.Windows.Forms.Button();
+            this.imgGeneral = new System.Windows.Forms.PictureBox();
             this.Panel_Lateral.SuspendLayout();
             this.Panel_Contenido.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.imgdisk)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgram)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgGeneral)).BeginInit();
             this.SuspendLayout();
             // 
             // Panel_Lateral
@@ -61,6 +74,18 @@
             this.Panel_Lateral.Size = new System.Drawing.Size(255, 749);
             this.Panel_Lateral.TabIndex = 0;
             // 
+            // btn_OS
+            // 
+            this.btn_OS.BackColor = System.Drawing.Color.White;
+            this.btn_OS.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_OS.Location = new System.Drawing.Point(31, 81);
+            this.btn_OS.Name = "btn_OS";
+            this.btn_OS.Size = new System.Drawing.Size(196, 51);
+            this.btn_OS.TabIndex = 1;
+            this.btn_OS.Text = "Configuracion del OS";
+            this.btn_OS.UseVisualStyleBackColor = false;
+            this.btn_OS.Click += new System.EventHandler(this.btn_OS_Click);
+            // 
             // Margen
             // 
             this.Margen.Dock = System.Windows.Forms.DockStyle.Top;
@@ -72,6 +97,13 @@
             // Panel_Contenido
             // 
             this.Panel_Contenido.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.Panel_Contenido.Controls.Add(this.btnFormatear);
+            this.Panel_Contenido.Controls.Add(this.label11);
+            this.Panel_Contenido.Controls.Add(this.lblram);
+            this.Panel_Contenido.Controls.Add(this.lbldisk);
+            this.Panel_Contenido.Controls.Add(this.imgdisk);
+            this.Panel_Contenido.Controls.Add(this.imgram);
+            this.Panel_Contenido.Controls.Add(this.btnSalir);
             this.Panel_Contenido.Controls.Add(this.label10);
             this.Panel_Contenido.Controls.Add(this.label9);
             this.Panel_Contenido.Controls.Add(this.label8);
@@ -86,6 +118,9 @@
             this.Panel_Contenido.Controls.Add(this.button1);
             this.Panel_Contenido.Controls.Add(this.btn_OArchivos);
             this.Panel_Contenido.Controls.Add(this.btn_Disco);
+            this.Panel_Contenido.Controls.Add(this.lblso);
+            this.Panel_Contenido.Controls.Add(this.imgGeneral);
+            this.Panel_Contenido.Controls.Add(this.lblData);
             this.Panel_Contenido.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Panel_Contenido.Location = new System.Drawing.Point(255, 0);
             this.Panel_Contenido.Name = "Panel_Contenido";
@@ -96,7 +131,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(268, 12);
+            this.label10.Location = new System.Drawing.Point(332, 10);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(27, 13);
             this.label10.TabIndex = 15;
@@ -189,6 +224,106 @@
             this.label1.TabIndex = 6;
             this.label1.Text = "¡ Bienvenido a Virtual OS Grupo 4 !";
             // 
+            // lblData
+            // 
+            this.lblData.AutoSize = true;
+            this.lblData.Location = new System.Drawing.Point(88, 176);
+            this.lblData.Name = "lblData";
+            this.lblData.Size = new System.Drawing.Size(0, 13);
+            this.lblData.TabIndex = 17;
+            this.lblData.Visible = false;
+            // 
+            // lblso
+            // 
+            this.lblso.AutoSize = true;
+            this.lblso.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblso.Location = new System.Drawing.Point(85, 159);
+            this.lblso.Name = "lblso";
+            this.lblso.Size = new System.Drawing.Size(245, 16);
+            this.lblso.TabIndex = 21;
+            this.lblso.Text = "Información del sistema operativo.";
+            this.lblso.Visible = false;
+            // 
+            // lblram
+            // 
+            this.lblram.AutoSize = true;
+            this.lblram.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblram.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblram.Location = new System.Drawing.Point(86, 223);
+            this.lblram.Name = "lblram";
+            this.lblram.Size = new System.Drawing.Size(224, 16);
+            this.lblram.TabIndex = 22;
+            this.lblram.Text = "Información de la memoria ram.";
+            this.lblram.Visible = false;
+            // 
+            // lbldisk
+            // 
+            this.lbldisk.AutoSize = true;
+            this.lbldisk.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbldisk.Location = new System.Drawing.Point(85, 295);
+            this.lbldisk.Name = "lbldisk";
+            this.lbldisk.Size = new System.Drawing.Size(194, 16);
+            this.lbldisk.TabIndex = 23;
+            this.lbldisk.Text = "Información del disco duro.";
+            this.lbldisk.Visible = false;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(259, 10);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(54, 13);
+            this.label11.TabIndex = 24;
+            this.label11.Text = "Formatear";
+            // 
+            // btnFormatear
+            // 
+            this.btnFormatear.BackColor = System.Drawing.Color.White;
+            this.btnFormatear.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnFormatear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFormatear.Image = global::Sistema_FAT.Properties.Resources.Formateo;
+            this.btnFormatear.Location = new System.Drawing.Point(251, 28);
+            this.btnFormatear.Name = "btnFormatear";
+            this.btnFormatear.Size = new System.Drawing.Size(62, 60);
+            this.btnFormatear.TabIndex = 25;
+            this.btnFormatear.UseVisualStyleBackColor = false;
+            this.btnFormatear.Click += new System.EventHandler(this.btnFormatear_Click);
+            // 
+            // imgdisk
+            // 
+            this.imgdisk.Image = global::Sistema_FAT.Properties.Resources.disco_duro2;
+            this.imgdisk.Location = new System.Drawing.Point(20, 295);
+            this.imgdisk.Name = "imgdisk";
+            this.imgdisk.Size = new System.Drawing.Size(53, 44);
+            this.imgdisk.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgdisk.TabIndex = 20;
+            this.imgdisk.TabStop = false;
+            this.imgdisk.Visible = false;
+            // 
+            // imgram
+            // 
+            this.imgram.Image = global::Sistema_FAT.Properties.Resources.RAM;
+            this.imgram.Location = new System.Drawing.Point(21, 228);
+            this.imgram.Name = "imgram";
+            this.imgram.Size = new System.Drawing.Size(52, 47);
+            this.imgram.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgram.TabIndex = 19;
+            this.imgram.TabStop = false;
+            this.imgram.Visible = false;
+            // 
+            // btnSalir
+            // 
+            this.btnSalir.BackColor = System.Drawing.Color.White;
+            this.btnSalir.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSalir.Image = global::Sistema_FAT.Properties.Resources.cerrar2;
+            this.btnSalir.Location = new System.Drawing.Point(322, 28);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(51, 60);
+            this.btnSalir.TabIndex = 16;
+            this.btnSalir.UseVisualStyleBackColor = false;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
+            // 
             // btn_Salir
             // 
             this.btn_Salir.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -234,6 +369,7 @@
             this.btn_OArchivos.Size = new System.Drawing.Size(65, 60);
             this.btn_OArchivos.TabIndex = 3;
             this.btn_OArchivos.UseVisualStyleBackColor = false;
+            this.btn_OArchivos.Click += new System.EventHandler(this.btn_OArchivos_Click);
             // 
             // btn_Disco
             // 
@@ -248,17 +384,16 @@
             this.btn_Disco.TabIndex = 2;
             this.btn_Disco.UseVisualStyleBackColor = false;
             // 
-            // btn_OS
+            // imgGeneral
             // 
-            this.btn_OS.BackColor = System.Drawing.Color.White;
-            this.btn_OS.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_OS.Location = new System.Drawing.Point(31, 81);
-            this.btn_OS.Name = "btn_OS";
-            this.btn_OS.Size = new System.Drawing.Size(196, 51);
-            this.btn_OS.TabIndex = 1;
-            this.btn_OS.Text = "Configuracion del OS";
-            this.btn_OS.UseVisualStyleBackColor = false;
-            this.btn_OS.Click += new System.EventHandler(this.btn_OS_Click);
+            this.imgGeneral.Image = global::Sistema_FAT.Properties.Resources.configuraciones2;
+            this.imgGeneral.Location = new System.Drawing.Point(21, 159);
+            this.imgGeneral.Name = "imgGeneral";
+            this.imgGeneral.Size = new System.Drawing.Size(52, 52);
+            this.imgGeneral.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgGeneral.TabIndex = 18;
+            this.imgGeneral.TabStop = false;
+            this.imgGeneral.Visible = false;
             // 
             // Pantalla_Principal
             // 
@@ -273,6 +408,9 @@
             this.Panel_Lateral.ResumeLayout(false);
             this.Panel_Contenido.ResumeLayout(false);
             this.Panel_Contenido.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.imgdisk)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgram)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgGeneral)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -297,5 +435,15 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btn_OS;
+        private System.Windows.Forms.Button btnSalir;
+        private System.Windows.Forms.Label lblData;
+        private System.Windows.Forms.Label lblso;
+        private System.Windows.Forms.PictureBox imgdisk;
+        private System.Windows.Forms.PictureBox imgram;
+        private System.Windows.Forms.PictureBox imgGeneral;
+        private System.Windows.Forms.Label lblram;
+        private System.Windows.Forms.Label lbldisk;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Button btnFormatear;
     }
 }

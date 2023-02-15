@@ -36,17 +36,17 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.btn_Siguiente = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.btnMenu = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnRegistrar
             // 
-            this.btnRegistrar.Location = new System.Drawing.Point(128, 303);
+            this.btnRegistrar.Location = new System.Drawing.Point(288, 299);
             this.btnRegistrar.Name = "btnRegistrar";
             this.btnRegistrar.Size = new System.Drawing.Size(75, 23);
             this.btnRegistrar.TabIndex = 0;
@@ -117,16 +117,6 @@
             this.textBox2.Size = new System.Drawing.Size(151, 20);
             this.textBox2.TabIndex = 12;
             // 
-            // btn_Siguiente
-            // 
-            this.btn_Siguiente.Location = new System.Drawing.Point(293, 303);
-            this.btn_Siguiente.Name = "btn_Siguiente";
-            this.btn_Siguiente.Size = new System.Drawing.Size(75, 23);
-            this.btn_Siguiente.TabIndex = 13;
-            this.btn_Siguiente.Text = "Siguiente";
-            this.btn_Siguiente.UseVisualStyleBackColor = true;
-            this.btn_Siguiente.Click += new System.EventHandler(this.button1_Click_1);
-            // 
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
@@ -186,17 +176,27 @@
             this.label8.TabIndex = 19;
             this.label8.Text = "VirtualOS Grupo4";
             // 
+            // btnMenu
+            // 
+            this.btnMenu.Location = new System.Drawing.Point(207, 299);
+            this.btnMenu.Name = "btnMenu";
+            this.btnMenu.Size = new System.Drawing.Size(75, 23);
+            this.btnMenu.TabIndex = 20;
+            this.btnMenu.Text = "Menu";
+            this.btnMenu.UseVisualStyleBackColor = true;
+            this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
+            // 
             // ConfiguracionOS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(508, 406);
+            this.Controls.Add(this.btnMenu);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.btn_Siguiente);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -225,12 +225,12 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Button btn_Siguiente;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Button btnMenu;
     }
 }
 

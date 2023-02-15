@@ -158,5 +158,10 @@ namespace Sistema_FAT
             TiempoR.Show();
             this.Hide();
         }
+
+        private void btnRegresarMain_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
