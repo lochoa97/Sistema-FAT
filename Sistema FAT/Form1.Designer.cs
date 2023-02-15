@@ -38,7 +38,6 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.btn_Siguiente = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.btn_Menu = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -47,7 +46,7 @@
             // 
             // btnRegistrar
             // 
-            this.btnRegistrar.Location = new System.Drawing.Point(212, 303);
+            this.btnRegistrar.Location = new System.Drawing.Point(128, 303);
             this.btnRegistrar.Name = "btnRegistrar";
             this.btnRegistrar.Size = new System.Drawing.Size(75, 23);
             this.btnRegistrar.TabIndex = 0;
@@ -149,16 +148,6 @@
             this.comboBox1.Size = new System.Drawing.Size(151, 21);
             this.comboBox1.TabIndex = 14;
             // 
-            // btn_Menu
-            // 
-            this.btn_Menu.Location = new System.Drawing.Point(128, 303);
-            this.btn_Menu.Name = "btn_Menu";
-            this.btn_Menu.Size = new System.Drawing.Size(75, 23);
-            this.btn_Menu.TabIndex = 15;
-            this.btn_Menu.Text = "Menu";
-            this.btn_Menu.UseVisualStyleBackColor = true;
-            this.btn_Menu.Click += new System.EventHandler(this.btn_Menu_Click);
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -206,7 +195,6 @@
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.btn_Menu);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.btn_Siguiente);
             this.Controls.Add(this.textBox2);
@@ -239,7 +227,6 @@
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Button btn_Siguiente;
         private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Button btn_Menu;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;

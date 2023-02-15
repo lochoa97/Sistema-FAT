@@ -36,6 +36,10 @@ namespace Sistema_FAT
                 registrar.WriteLine("Tipo: " + textBox2.Text);
                 registrar.WriteLine("Version: " + comboBox1.Text);
                 registrar.WriteLine("\n");
+                //Abrir el siguiete formulario
+                Form formulario2 = new Form2();
+                formulario2.Show();
+                Close();
             }
             catch
             { MessageBox.Show("ERROR");
